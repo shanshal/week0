@@ -1,67 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Google - Advanced search</title>
-    <link rel="stylesheet" href="style/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/styles.css">
 
-    <nav>
-      <ul>
-        <li><a href="index.html">Go back</a></li>
-      </ul>
-    </nav>
-
-    <div class="container">
-      <header>
-        <h2>Find pages with...</h2>
-      </header>
-
-      <section>
-        <form action="https://google.com/search">
-          <div class="row">
-
-            <div class="col">
-              <h3>all these words:</h3>
-            </div>
-
-            <div class="col">
-              <input type="text" name="as_q">
-            </div>
-
-            <div class="col">
-              <h3>this exact word or phrase:</h3>
-            </div>
-
-            <div class="col">
-              <input type="text" value name="as_epq">
-            </div>
-
-            <div class="col">
-              <h3>any of these words:</h3>
-            </div>
-
-            <div class="col">
-              <input type="text" value name="as_oq">
-            </div>
-
-            <div class="col">
-              <h3>none of these words:</h3>
-            </div>
-
-            <div class="col">
-              <input type="text" value name="as_eq">
-              <div class="w-100"></div>
-              <input type="submit" class="btn-blue" value="Advanced Search">
-            </div>
-
-          </div>
-        </form>
-      </section>
+  <title>Document</title>
+</head>
+<body>
+  <header class="ad-header">
+    <div class="googleLogo">
+      Google
+    </div>
+    <div class="goBack">
+      
+      <a href="index.html"> Go Back</a>
 
     </div>
+  </header>
 
-  </body>
+
+<h2 class="top-title">
+  Advanced Search
+</h2>
+<hr>
+
+  <form action="https://google.com/search" class="adsch">
+    <div class="title">
+      <div class="top">
+        Find Pages with...
+      </div>
+      <p class="">all these words: </p>
+      <p>this exact word or phrase: </p>
+      <p>any of these words: </p>
+      <p>none of these words:   </p>
+      <p>numbers ranging from: </p>
+    </div>
+
+
+    <div class="inputs">
+      <div class="topmid"></div>
+      <input type="text" name="as_q">
+      <input type="text" name="as_epq">
+      <input type="text" name="as_oq" >
+      <input type="text" name="as_eq" id="">
+      <div class="ranges">
+        <input type="text" name="as_nlo">
+        <p>to</p>
+        <input type="text" name="aas_nhi">
+    </div>
+    </div>
+
+<div class="subtext">
+  <div class="top">
+    To do this in the search box.
+  </div>
+  <p>Type the important words: <strong>tri-colour rat terrier</strong></p>
+  <p>Put exact words in quotes: <strong>"rat terrier"</strong></p>
+  <p >Type <strong>OR</strong> between all the words you want: <strong>miniature OR standard </strong></p>
+  <p class="subtext">Put a minus sign just before words that you don't want: <strong> -rodent, -"Jack Russell"</strong></p>
+  <p class="subtext">Put two full stops between the numbers and add a unit of measurement: <strong> 10..35 kg, £300..£500, 2010..2011</strong></p>
+  <input type="submit" class="btn-blue" value="Advanced Search">
+
+</div>
+
+
+
+  </form>
+</body>
 </html>
